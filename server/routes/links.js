@@ -58,7 +58,7 @@ router.post('/shorten', async (req, res) => {
  * @summary Get the statistics of the link
  * @tags link
  * @param {string} id.path.required - Id of the link
- * @param {number|undefined} months.path - The statistics period as a number of the monthes
+ * @param {number} months.path - The statistics period as a number of the monthes
  * @returns {StatsResponse} 200 - success response - application/json
  */
 router.get('/stats/:id/:months?', async (req, res) => {
